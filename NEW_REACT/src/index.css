@@ -1,0 +1,15 @@
+/* Add this to fix React rendering */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Add scroll offset for fixed header */
+section {
+  scroll-margin-top: 80px;
+}
