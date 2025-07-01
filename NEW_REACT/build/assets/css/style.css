@@ -109,40 +109,58 @@ section {
 }
 
 .github-btn {
-  display: inline-flex;
+  width: 100%;
+  max-width: 220px;
+  padding: 16px 32px;
+  border-radius: 999px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 24px rgba(66, 115, 220, 0.12);
+  transition: var(--transition), box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+  background: var(--primary);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  padding: 12px 24px;
-  background-color: var(--dark);
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: var(--transition);
-  width: 100%;
-  max-width: 313px;
-  margin: 20px auto 0;
-  font-size: 1rem;
+  border: none;
 }
 
 .github-btn:hover {
-  background-color: #333;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 0 8px 2px #4273dc, 0 4px 16px rgba(66, 115, 220, 0.12);
+  transform: translateY(-8px) scale(1.04);
+  border: none;
+}
+
+.github-btn:active {
+  transform: scale(0.98);
 }
 
 .dark-mode .github-btn {
-  background-color: var(--dark);
-  color: var(--primary);
+  background: var(--primary);
+  color: #fff;
 }
 
 .dark-mode .github-btn:hover {
-  background-color: var(--body-bg);
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 0 8px 2px #4273dc, 0 4px 16px rgba(66, 115, 220, 0.12);
 }
 
 .project-github {
-  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 0 28px 0;
+  padding: 0;
+  background: none;
 }
 
 /* ======== HEADER & NAVIGATION ======== */
@@ -226,6 +244,11 @@ nav {
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.github-btn,
+.github-btn a {
+  text-decoration: none !important;
 }
 
 /* ======== MOBILE NAVIGATION ======== */
@@ -639,6 +662,9 @@ nav {
   overflow: hidden;
   transition: var(--transition);
   box-shadow: 0 10px 30px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -673,12 +699,15 @@ nav {
 
 .project-content {
   padding: 25px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-content h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: var(--dark);
+  color: var(--primary2);
 }
 
 .date {

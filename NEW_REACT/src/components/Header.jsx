@@ -41,7 +41,9 @@ const Header = () => {
     <header>
       <div className="container">
         <nav>
-          <a href="#" className="logo">Sourav<span>.</span></a>
+          <Link to="home" spy={true} smooth={true} offset={-70} duration={500} className="logo">
+            Sourav<span>.</span>
+          </Link>
           
           {/* Desktop Navigation */}
           <ul className="nav-links">
@@ -117,10 +119,6 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        
-        <div className="mobile-theme-toggle">
-          <ThemeToggle />
-        </div>
       </div>
       
       {/* Overlay when mobile menu is open */}

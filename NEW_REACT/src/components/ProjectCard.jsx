@@ -23,22 +23,22 @@ const ProjectCard = ({ project }) => (
           <span className="tech-item" key={index}>{tech}</span>
         ))}
       </div>
-      <div className="project-github">
-        {project.githubLink ? (
-          <a 
-            href={project.githubLink} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="github-btn"
-          >
-            <i className="fab fa-github"></i> GitHub Link
-          </a>
-        ) : (
-          <button className="github-btn" disabled>
-            <i className="fab fa-github"></i> Coming Soon
-          </button>
-        )}
-      </div>
+    </div>
+    <div className="project-github">
+      {project.githubLink ? (
+        <a 
+          href={project.githubLink} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="github-btn"
+        >
+          <i className="fab fa-github"></i> GitHub Link
+        </a>
+      ) : (
+        <button className="github-btn" disabled>
+          <i className="fab fa-github"></i> Coming Soon
+        </button>
+      )}
     </div>
   </div>
 );

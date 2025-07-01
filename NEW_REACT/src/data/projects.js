@@ -36,7 +36,55 @@ const projects = [
       "Got selected on the regional level for Smart India Hackathon 2024"
     ],
     techStack: ["Machine Learning", "React Native", "AI"],
+    githubLink: "https://github.com/sDash151/VAANI-APP"
+  },
+  {
+    id: 7,
+    title: "EventPulse – Real-Time RSVP & Feedback Platform",
+    image: "/assets/images/Event_Pulse.png",
+    icon: "fas fa-bolt",
+    date: "2025 | Bangalore, India",
+    description: [
+      "Built in a hackathon by MisogiAI initiative (Masai School)",
+      "Hosts create/manage events, set RSVP deadlines, and track live attendance",
+      "Attendees RSVP, check in, and give instant feedback (comments & emojis)",
+      "Live feedback stream and real-time analytics for hosts",
+      "Secure login, mobile-first UI, and smart notifications"
+    ],
+    techStack: ["React", "Node.js", "Express", "MongoDB", "WebSockets", "Chart.js"],
+    githubLink: "https://github.com/sDash151/PulseEvent_Backend"
+  },
+  {
+    id: 8,
+    title: "GlobeTrekker – Ultimate Travel Companion",
+    image: "/assets/images/GlobeTrekker.png",
+    icon: "fas fa-globe",
+    date: "2025 | Bangalore, India",
+    description: [
+      "AI-powered app for trip planning, budgeting, and packing",
+      "Interactive 3D globe with cost overlays and travel stories feed",
+      "AR packing simulator and climate-adaptive recommendations",
+      "Real-time budget tracker, currency conversion, and safety alerts",
+      "Clean, mobile-first UI with dark mode and smooth animations"
+    ],
+    techStack: ["React", "TensorFlow.js", "Three.js", "Framer Motion", "Node.js", "Express"],
     githubLink: ""
+  },
+  {
+    id: 9,
+    title: "Micro Frontend Music Library Portal",
+    image: "/assets/images/MusicLibrary.png",
+    icon: "fas fa-music",
+    date: "2025 | Bangalore, India",
+    description: [
+      "Music library UI with filter, sort, and group by album, artist, title",
+      "Micro frontend architecture: main app + dynamic music library module",
+      "Role-based access: admin (add/delete), user (view/filter only)",
+      "Mock JWT authentication, no backend required",
+      "Deployed main app and micro frontend with live demo links"
+    ],
+    techStack: ["React", "Vite", "Module Federation", "JavaScript", "Tailwind CSS"],
+    githubLink: "https://github.com/sDash151/Music-main-app"
   },
   {
     id: 4,
