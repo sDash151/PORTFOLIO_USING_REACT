@@ -43,6 +43,20 @@ body {
   overflow-x: hidden;
 }
 
+body, * {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+input, textarea, select {
+  user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -200,7 +214,7 @@ nav {
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--primary);
   text-decoration: none;
@@ -225,6 +239,7 @@ nav {
   font-weight: 500;
   transition: var(--transition);
   position: relative;
+  cursor: pointer;
 }
 
 .nav-links a:hover {
@@ -249,6 +264,14 @@ nav {
 .github-btn,
 .github-btn a {
   text-decoration: none !important;
+}
+
+.github-btn i {
+  margin-right: 10px;
+}
+
+.github-btn .fa-github {
+  font-size: 2rem;
 }
 
 /* ======== MOBILE NAVIGATION ======== */

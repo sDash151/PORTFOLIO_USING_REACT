@@ -13,7 +13,7 @@ const Hero = () => (
       </div>
       <div className="hero-image">
         <img 
-          src="/assets/images/PORTFOLIO_ME.jpg" 
+          src="/assets/images/PORTFOLIO_ME.webp" 
           alt="Sourav Dash Adhikari" 
           className="profile-img" 
         />
